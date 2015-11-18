@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSSet *sets = [NSSet setWithObjects:@"a",@"2",@"3", nil];
+    NSLog(@"%@",[sets anyObject]);
+    //  -0.34[-0.02%]
+//    NSString str3 = [NSString stringWithFormat:@"%@[%@]",@"",@""];
+//    NSLog(@"%@",str3);
+    
     return YES;
 }
 

@@ -15,6 +15,8 @@
 		376DA7CE1BFC21B4003673A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376DA7CC1BFC21B4003673A0 /* Main.storyboard */; };
 		376DA7D01BFC21B4003673A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376DA7CF1BFC21B4003673A0 /* Assets.xcassets */; };
 		376DA7D31BFC21B4003673A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376DA7D11BFC21B4003673A0 /* LaunchScreen.storyboard */; };
+		376DA7DC1BFC2DA3003673A0 /* SpaceshipScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 376DA7DB1BFC2DA3003673A0 /* SpaceshipScene.m */; };
+		376DA7DF1BFC58EA003673A0 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 376DA7DE1BFC58EA003673A0 /* UIColor+Random.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		376DA7CF1BFC21B4003673A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		376DA7D21BFC21B4003673A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		376DA7D41BFC21B4003673A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		376DA7DA1BFC2DA3003673A0 /* SpaceshipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceshipScene.h; sourceTree = "<group>"; };
+		376DA7DB1BFC2DA3003673A0 /* SpaceshipScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceshipScene.m; sourceTree = "<group>"; };
+		376DA7DD1BFC58EA003673A0 /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		376DA7DE1BFC58EA003673A0 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		376DA7BD1BFC21B4003673A0 /* SpriteKit学习-01 */ = {
 			isa = PBXGroup;
 			children = (
+				376DA7DD1BFC58EA003673A0 /* UIColor+Random.h */,
+				376DA7DE1BFC58EA003673A0 /* UIColor+Random.m */,
 				376DA7C11BFC21B4003673A0 /* AppDelegate.h */,
 				376DA7C21BFC21B4003673A0 /* AppDelegate.m */,
 				376DA7C41BFC21B4003673A0 /* GameScene.h */,
@@ -75,6 +83,8 @@
 				376DA7D11BFC21B4003673A0 /* LaunchScreen.storyboard */,
 				376DA7D41BFC21B4003673A0 /* Info.plist */,
 				376DA7BE1BFC21B4003673A0 /* Supporting Files */,
+				376DA7DA1BFC2DA3003673A0 /* SpaceshipScene.h */,
+				376DA7DB1BFC2DA3003673A0 /* SpaceshipScene.m */,
 			);
 			path = "SpriteKit学习-01";
 			sourceTree = "<group>";
@@ -158,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376DA7DF1BFC58EA003673A0 /* UIColor+Random.m in Sources */,
 				376DA7CB1BFC21B4003673A0 /* GameViewController.m in Sources */,
 				376DA7C31BFC21B4003673A0 /* AppDelegate.m in Sources */,
+				376DA7DC1BFC2DA3003673A0 /* SpaceshipScene.m in Sources */,
 				376DA7C61BFC21B4003673A0 /* GameScene.m in Sources */,
 				376DA7C01BFC21B4003673A0 /* main.m in Sources */,
 			);
@@ -223,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -274,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SpriteKit学习-01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.360buy.SpriteKit---01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SpriteKit学习-01/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.360buy.SpriteKit---01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
